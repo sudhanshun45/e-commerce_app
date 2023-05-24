@@ -21,11 +21,12 @@ class LoginScreen extends StatelessWidget {
             width: Get.width * 0.8,
             padding: const EdgeInsets.only(left: 0),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.red, width: 4),
+              border: Border.all(color: Colors.purple, width: 4),
               borderRadius: BorderRadius.circular(10),
             ),
             child: TextField(
               controller: controller.numberController,
+              keyboardType: TextInputType.number,
               style: const TextStyle(
                 fontSize: 20,
               ),
@@ -34,7 +35,7 @@ class LoginScreen extends StatelessWidget {
                   hintText: "Enter Mobile Number",
                   prefixIcon: Icon(
                     Icons.phone,
-                    color: Colors.red,
+                    color: Colors.purple,
                   ),
                   hintStyle: TextStyle(
                     fontSize: 20,
@@ -53,7 +54,7 @@ class LoginScreen extends StatelessWidget {
                     height: Get.height * 0.07,
                     width: Get.width * 0.5,
                     decoration: BoxDecoration(
-                      color: Colors.red,
+                      color: Colors.purple,
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: const Center(
@@ -76,7 +77,7 @@ class LoginScreen extends StatelessWidget {
                     appContext: context,
                     controller: controller.otpController,
                     pastedTextStyle:const TextStyle(
-                      color: Colors.red,
+                      color: Colors.purple,
                       fontWeight: FontWeight.bold,
                     ),
                     length: 6,
@@ -86,7 +87,7 @@ class LoginScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                       fieldHeight: 50,
                       fieldWidth: 40,
-                      activeFillColor: Colors.red,
+                      activeFillColor: Colors.purple,
                     ),
                     animationType: AnimationType.fade,
                     onChanged: (String value) {},
@@ -103,7 +104,7 @@ class LoginScreen extends StatelessWidget {
                 height: Get.height * 0.07,
                 width: Get.width * 0.5,
                 decoration: BoxDecoration(
-                  color: Colors.red,
+                  color: Colors.purple,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: const Center(

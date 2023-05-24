@@ -47,7 +47,7 @@ class LoginScreenController extends GetxController {
         FirebaseAuth auth = FirebaseAuth.instance;
         PhoneAuthCredential credential = PhoneAuthProvider.credential(verificationId: verificationID, smsCode: otp);
         UserCredential user = await  auth.signInWithCredential(credential);
-        Get.to(const HomeScreen());
+        Get.to( HomeScreen());
       }on FirebaseAuthException catch(e){
         Get.snackbar("Invalid OTP", "Please Enter a valid OTP");
       }

@@ -18,6 +18,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'E-Commerce App',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        accentColor: Colors.purpleAccent
+      ),
       home: LoginScreen(),
     );
   }
